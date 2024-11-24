@@ -7,64 +7,92 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <h1>Multimedia Software</h1>
-    <nav>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#demo">Demo</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <h1>Multimedia Pro</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </header>
 
-  <section id="hero" class="hero">
-    <h2>Your Ultimate Multimedia Solution</h2>
-    <p>Unlock creativity with state-of-the-art multimedia tools.</p>
-    <button onclick="scrollToSection('features')">Explore Features</button>
+  <section id="home" class="hero">
+    <h2>Revolutionize Your Multimedia Experience</h2>
+    <p>Discover the best tools for editing, playing, and managing multimedia files.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Multimedia Pro, we provide cutting-edge software solutions for audio, video, and image editing. Our mission is to empower creators with intuitive tools to bring their ideas to life.</p>
   </section>
 
   <section id="features" class="features">
     <h2>Features</h2>
     <div class="feature-item">
-      <h3>Video Editing</h3>
-      <p>Professional tools for video creation and editing.</p>
+      <h3>Advanced Audio Editing</h3>
+      <p>Enhance your sound quality with precision tools.</p>
     </div>
     <div class="feature-item">
-      <h3>Audio Mixing</h3>
-      <p>Powerful sound design and mixing capabilities.</p>
+      <h3>High-Quality Video Editing</h3>
+      <p>Create professional-grade videos effortlessly.</p>
     </div>
     <div class="feature-item">
-      <h3>3D Rendering</h3>
-      <p>Create stunning 3D animations and effects.</p>
+      <h3>Image Optimization</h3>
+      <p>Compress and edit images with minimal quality loss.</p>
     </div>
   </section>
 
-  <section id="demo" class="demo">
-    <h2>Software Demo</h2>
-    <div class="demo-player">
-      <video id="demo-video" width="640" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="controls">
-        <button onclick="playDemo()">Play</button>
-        <button onclick="pauseDemo()">Pause</button>
-        <button onclick="stopDemo()">Stop</button>
-      </div>
+  <section id="blog">
+    <h2>Latest Articles</h2>
+    <div class="blog-post">
+      <h3>5 Tips to Edit Videos Like a Pro</h3>
+      <p>Learn essential tricks to make your videos stand out. <a href="#">Read more</a></p>
+    </div>
+    <div class="blog-post">
+      <h3>Best Audio Editing Software in 2024</h3>
+      <p>Discover the top tools for audio mastering. <a href="#">Read more</a></p>
+    </div>
+    <div class="blog-post">
+      <h3>Image Compression: What You Need to Know</h3>
+      <p>How to reduce image size without losing quality. <a href="#">Read more</a></p>
     </div>
   </section>
 
-  <footer id="contact" class="footer">
+  <section id="faq">
+    <h2>FAQs</h2>
+    <div class="faq-item">
+      <h3>What is Multimedia Software?</h3>
+      <p>Multimedia software refers to programs that handle various media types, including video, audio, and images.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is your software free?</h3>
+      <p>Yes, we offer free and premium versions to suit your needs.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I use it on multiple devices?</h3>
+      <p>Yes, our software is compatible with Windows, macOS, and mobile devices.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
     <h2>Contact Us</h2>
     <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+    <p>Follow us on:</p>
+    <ul class="social-media">
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+    <p>&copy; 2024 Multimedia Pro. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
