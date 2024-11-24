@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Multimedia Software</h1>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h2>Your Ultimate Multimedia Solution</h2>
+    <p>Unlock creativity with state-of-the-art multimedia tools.</p>
+    <button onclick="scrollToSection('features')">Explore Features</button>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-item">
+      <h3>Video Editing</h3>
+      <p>Professional tools for video creation and editing.</p>
+    </div>
+    <div class="feature-item">
+      <h3>Audio Mixing</h3>
+      <p>Powerful sound design and mixing capabilities.</p>
+    </div>
+    <div class="feature-item">
+      <h3>3D Rendering</h3>
+      <p>Create stunning 3D animations and effects.</p>
+    </div>
+  </section>
+
+  <section id="demo" class="demo">
+    <h2>Software Demo</h2>
+    <div class="demo-player">
+      <video id="demo-video" width="640" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="controls">
+        <button onclick="playDemo()">Play</button>
+        <button onclick="pauseDemo()">Pause</button>
+        <button onclick="stopDemo()">Stop</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
