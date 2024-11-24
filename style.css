@@ -1,95 +1,182 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #0073e6, #003366);
+  color: #fff;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #005bb5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background-color: #00408f;
+}
+
+.features, .demo, .footer {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature-item {
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.feature-item h3 {
+  font-size: 20px;
+}
+
+.demo-player {
+  margin: auto;
+  max-width: 640px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  background-color: #005bb5;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+footer input, footer textarea, footer button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+footer button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   header ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  header ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to bottom, #0073e6, #003366);
-    color: #fff;
-  }
-  
-  .features, .demo, .footer {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .feature-item {
-    margin: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .demo-player {
-    margin: auto;
-    max-width: 640px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  .controls button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    background-color: #0073e6;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .controls button:hover {
-    background-color: #005bb5;
-  }
-  
-  footer form {
-    display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 400px;
-    margin: auto;
   }
-  
-  footer input, footer textarea, footer button {
-    padding: 10px;
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .features {
+    padding: 30px 10px;
+  }
+
+  .feature-item {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .demo-player {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .controls button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+
+  footer form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header ul {
+    gap: 5px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
     font-size: 16px;
   }
-  
-  footer button {
-    background-color: #0073e6;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+
+  .features h2, .demo h2, footer h2 {
+    font-size: 24px;
   }
-  
-  footer button:hover {
-    background-color: #005bb5;
+
+  .feature-item h3 {
+    font-size: 18px;
   }
-  
+
+  footer input, footer textarea, footer button {
+    font-size: 14px;
+  }
+}
