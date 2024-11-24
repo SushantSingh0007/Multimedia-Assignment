@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #0073e6, #003366);
+    color: #fff;
+  }
+  
+  .features, .demo, .footer {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .feature-item {
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .demo-player {
+    margin: auto;
+    max-width: 640px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .controls button:hover {
+    background-color: #005bb5;
+  }
+  
+  footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  footer input, footer textarea, footer button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  footer button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background-color: #005bb5;
+  }
+  
